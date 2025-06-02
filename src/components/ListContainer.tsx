@@ -176,7 +176,7 @@ export const ListContainer: React.FC<ListContainerProps> = ({ id, title, cards, 
                 }}
               >
                 <Palette className="h-4 w-4 mr-2" />
-                Change color
+                Mudar cor
               </button>
               <button 
                 className="w-full text-left px-4 py-2 hover:bg-gray-100"
@@ -185,13 +185,13 @@ export const ListContainer: React.FC<ListContainerProps> = ({ id, title, cards, 
                   setShowDropdown(false);
                 }}
               >
-                Rename list
+                Renomear lista
               </button>
               <button 
                 className="w-full text-left px-4 py-2 hover:bg-gray-100 text-red-600"
                 onClick={handleDeleteList}
               >
-                Delete list
+                Deletar lista
               </button>
             </div>
           )}
@@ -230,7 +230,7 @@ export const ListContainer: React.FC<ListContainerProps> = ({ id, title, cards, 
           <div className="mt-2">
             <textarea
               className="w-full p-2 text-sm border border-gray-300 rounded resize-none focus:outline-none focus:border-primary-400"
-              placeholder="Enter a title for this card..."
+              placeholder="Digite um titulo para o cartão.."
               value={newCardTitle}
               onChange={(e) => setNewCardTitle(e.target.value)}
               autoFocus
@@ -251,7 +251,7 @@ export const ListContainer: React.FC<ListContainerProps> = ({ id, title, cards, 
                 className="px-3 py-1 text-sm bg-primary-500 text-white rounded hover:bg-primary-600"
                 onClick={handleCreateCard}
               >
-                Add Card
+                Adicionar
               </button>
               <button
                 className="p-1 ml-1 text-gray-500 hover:text-gray-700 rounded"
@@ -270,7 +270,7 @@ export const ListContainer: React.FC<ListContainerProps> = ({ id, title, cards, 
             onClick={() => setIsAddingCard(true)}
           >
             <Plus className="h-4 w-4 mr-1" />
-            Add a card
+            Adicionar cartão
           </button>
         )}
       </div>

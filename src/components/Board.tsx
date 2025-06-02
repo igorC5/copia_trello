@@ -214,7 +214,7 @@ export const Board: React.FC = () => {
                 <input
                   type="text"
                   className="w-full px-2 py-1 text-sm border border-gray-300 rounded focus:outline-none focus:border-primary-500"
-                  placeholder="Enter list title..."
+                  placeholder="Digite o titulo da lista..."
                   value={newListTitle}
                   onChange={(e) => setNewListTitle(e.target.value)}
                   autoFocus
@@ -231,7 +231,7 @@ export const Board: React.FC = () => {
                     className="px-3 py-1 text-sm bg-primary-500 text-white rounded hover:bg-primary-600"
                     onClick={handleCreateList}
                   >
-                    Add List
+                    Adicionar
                   </button>
                   <button
                     className="px-3 py-1 text-sm ml-2"
@@ -240,7 +240,7 @@ export const Board: React.FC = () => {
                       setNewListTitle('');
                     }}
                   >
-                    Cancel
+                    Cancelar
                   </button>
                 </div>
               </div>
@@ -250,7 +250,7 @@ export const Board: React.FC = () => {
                 onClick={() => setIsAddingList(true)}
               >
                 <Plus className="h-5 w-5 mr-1" />
-                Add another list
+                Adicionar lista
               </button>
             )}
           </div>

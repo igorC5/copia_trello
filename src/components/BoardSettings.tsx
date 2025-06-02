@@ -36,7 +36,7 @@ export const BoardSettings: React.FC<BoardSettingsProps> = ({ boardId, onClose }
     <div className="fixed inset-0 z-50 overflow-auto bg-black/50 flex items-center justify-center p-4">
       <div className="bg-white rounded-lg shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto">
         <div className="flex justify-between items-center p-4 border-b">
-          <h3 className="text-lg font-medium">Board Settings</h3>
+          <h3 className="text-lg font-medium">Configurações do quadro</h3>
           <button
             onClick={onClose}
             className="text-gray-500 hover:text-gray-700"
@@ -61,13 +61,13 @@ export const BoardSettings: React.FC<BoardSettingsProps> = ({ boardId, onClose }
           </div>
           
           <div className="border-t pt-4">
-            <h4 className="font-medium text-red-600 mb-2">Danger Zone</h4>
+            <h4 className="font-medium text-red-600 mb-2">Cuidado</h4>
             <button
               className="flex items-center px-3 py-2 bg-red-50 text-red-700 hover:bg-red-100 rounded transition-colors"
               onClick={handleDeleteBoard}
             >
               <Trash className="h-4 w-4 mr-2" />
-              Delete Board
+              Deletar Quadro
             </button>
           </div>
         </div>

@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
         <div className="flex items-center space-x-4">
           <div className="flex items-center">
             <Trello className="h-8 w-8 mr-2" />
-            <h1 className="text-xl font-bold">TaskBoard</h1>
+            <h1 className="text-xl font-bold">TaskBoard do igor</h1>
           </div>
           
           <div className="relative">
@@ -39,7 +39,7 @@ export const Header: React.FC = () => {
             {boardsMenuOpen && (
               <div className="absolute top-full left-0 mt-1 w-64 bg-white text-gray-800 rounded shadow-lg z-10 animate-slide-in">
                 <div className="py-2">
-                  <h3 className="px-3 py-1 text-sm font-semibold text-gray-500">Your boards</h3>
+                  <h3 className="px-3 py-1 text-sm font-semibold text-gray-500">Seus quadros</h3>
                   <ul className="max-h-64 overflow-y-auto">
                     {boards.map((board) => (
                       <li key={board.id}>
@@ -94,7 +94,7 @@ export const Header: React.FC = () => {
                         onClick={() => setIsCreatingBoard(true)}
                       >
                         <Plus className="h-4 w-4 mr-1" />
-                        Create new board
+                        Criar um novo quadro
                       </button>
                     )}
                   </div>

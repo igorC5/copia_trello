@@ -5,7 +5,7 @@ import { Board, Card, Label, StoreState } from '../types';
 
 const getDefaultBoard = (): Board => ({
   id: nanoid(),
-  title: 'My First Board',
+  title: 'Meu primeiro quadro',
   lists: [
     {
       id: nanoid(),
